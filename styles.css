@@ -6,7 +6,7 @@ html, body {
 
 /*https://stackoverflow.com/questions/37887589/sticky-header-and-footer-scrollable-content*/
 /*option 1*/
-/*
+/**/
 #view-wrapper{
   height: 100%;
   display: flex;
@@ -38,7 +38,7 @@ background-color: #9d9e9c;
 width: 80%;
 padding: 10px;
 }
-*/
+/**/
 
 
 
@@ -46,7 +46,7 @@ padding: 10px;
 
 
 /*option 2*/
-/**/
+/*
 #view-wrapper {
   height: 100%;
   width: 100%;
@@ -91,4 +91,4 @@ background-color: #9d9e9c;
 width: 80%;
 padding: 10px;
 }
-/**/
+*/
