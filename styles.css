@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+/*https://stackoverflow.com/questions/37887589/sticky-header-and-footer-scrollable-content*/
+/*option 1*/
+/*
+#view-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+height: 80px;
+width: 100%;
+background-color: #1d753c;
+}
+
+#middle-view{
+  flex: 1;
+  overflow: auto;
+}
+
+#content{
+background-color: #ffdeb5;
+}
+
+footer{
+height: 40px;
+width: 100%;
+background-color: #9d9e9c;
+}
+
+#input-field{
+width: 80%;
+padding: 10px;
+}
+*/
+
+
+
+
+
+
+/*option 2*/
+/**/
+#view-wrapper {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+header {
+  display: table-row;
+  height: 80px;
+  background-color: #1d753c;
+}
+
+.inner {
+  display: table-cell;
+}
+
+#middle-view{
+display: table-row;
+}
+
+#content{
+  height: 100%;
+  position: relative;
+  background-color: #ffdeb5;
+  display: table-cell;
+}
+#scrollable {
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  overflow: auto;
+}
+
+footer{
+display: table-row;
+height: 40px;
+width: 100%;
+background-color: #9d9e9c;
+}
+
+#input-field{
+width: 80%;
+padding: 10px;
+}
+/**/
