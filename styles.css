@@ -1,94 +1,133 @@
-html, body {
-  height: 100%;
-  margin: 0;
+/** from material web **/
+
+body {
+  display: flex;
+  height: 100vh;
 }
 
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
 
-/*https://stackoverflow.com/questions/37887589/sticky-header-and-footer-scrollable-content*/
-/*option 1*/
-/**/
-#view-wrapper{
+.main-content {
+  overflow: auto;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+}
+
+.app-bar {
+  position: absolute;
+}
+
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+/**custom below**/
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 header{
-height: 80px;
-width: 100%;
-background-color: #1d753c;
+  position: static !important;
+  background-color: black !important;
 }
 
-#middle-view{
-  flex: 1;
-  overflow: auto;
+main{
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-#content{
-background-color: #ffdeb5;
-}
-
-footer{
-height: 40px;
-width: 100%;
-background-color: #9d9e9c;
-}
-
-#input-field{
-width: 80%;
-padding: 10px;
-}
-/**/
-
-
-
-
-
-
-/*option 2*/
-/*
-#view-wrapper {
-  height: 100%;
+.full-width{
   width: 100%;
-  display: table;
 }
 
-header {
-  display: table-row;
-  height: 80px;
-  background-color: #1d753c;
+
+#menu-button{
+  text-decoration: none;
 }
 
-.inner {
-  display: table-cell;
+aside{
+  transition: width 0.5s !important;
 }
 
-#middle-view{
-display: table-row;
+/** logo **/
+.logo{
+  margin: 0 auto;
+  border-style: dashed;
+
+  font-family: 'Geo', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-#content{
-  height: 100%;
-  position: relative;
-  background-color: #ffdeb5;
-  display: table-cell;
-}
-#scrollable {
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  overflow: auto;
+#big-logo{
+  height: 46px;
+  width: 98px;
+
+  border-color: grey;
+  border-width: 3px;
+  background-color: white;
+
+  padding: 4px;
+  overflow: hidden;
+  font-size: 24px;
 }
 
-footer{
-display: table-row;
-height: 40px;
-width: 100%;
-background-color: #9d9e9c;
+#lil-logo{
+  border-width: 1px;
+  border-color: grey;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
-#input-field{
-width: 80%;
-padding: 10px;
+#big-logo a {
+  text-decoration: none;
+  color: black;
 }
-*/
+
+#lil-logo a{
+  text-decoration: none;
+  color: white;
+}
+
+#big-logo p {
+  margin: 0;
+}
+
+#logan{
+  letter-spacing: 11px;
+}
+#watanabe{
+  letter-spacing: 0.7px;
+}
+
+#menu{
+  padding-top: 24px;
+}
+
+/** content **/
+
+#headline{
+  font-family: 'Geo', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.social-cell{
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  aside {
+    width: 0px !important;
+  }
+}
+
+
+
