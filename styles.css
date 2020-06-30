@@ -64,11 +64,13 @@ aside{
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  align-content: center;
+  align-items: center;
 }
 
 #big-logo{
   height: 46px;
-  width: 98px;
+  width: 104px;
 
   border-color: grey;
   border-width: 3px;
