@@ -58,12 +58,10 @@ aside{
 /** logo **/
 .logo{
   margin: 0 auto;
-  border-style: dashed;
-
   font-family: 'Geo', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
+  
   align-content: center;
   align-items: center;
 }
@@ -72,8 +70,10 @@ aside{
   height: 46px;
   width: 104px;
 
-  border-color: grey;
-  border-width: 3px;
+  /*border-color: grey;
+  border-style: dashed;
+  border-width: 3px;*/
+  text-align: left;
   background-color: white;
 
   padding: 4px;
@@ -82,8 +82,10 @@ aside{
 }
 
 #lil-logo{
+  border-style: dashed;
   border-width: 1px;
   border-color: grey;
+  text-align: center;
   padding-left: 2px;
   padding-right: 2px;
 }
